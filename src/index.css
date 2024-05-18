@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #9acbff;
+  background: url('./assets/images/fon-dlya-konditera.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #58453A;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  background: #b5838c85;
+  padding: 15px 15px;
+  backdrop-filter: blur(10px);
+  margin: 0 auto;
+}
+

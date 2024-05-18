@@ -1,0 +1,16 @@
+.btn {
+    width: 100%;
+    height: 100%;
+    background-color: #F9CDB2;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 80px #F9CDB2;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px #F9CDB2, 
+      0 0 60px #F9CDB2, 
+      0 0 100px #F9CDB2;
+  }
