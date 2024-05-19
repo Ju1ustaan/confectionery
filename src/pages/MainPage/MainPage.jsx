@@ -32,17 +32,31 @@ const MainPage = () => {
         <div className={s.btn}>
           <NavigateBtn navigateBtnOption={navigateBtnOption} />
         </div>
-        <p className='text-xl mb-5'>Как оформить заказ?</p>
-        <p className=''>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum natus aliquam dolore incidunt velit similique ex maiores alias eius autem, magnam totam minus? Officia aut optio nostrum fugit repellat iusto?
-          Consequatur nulla hic quos nam voluptas dolore distinctio odit assumenda. Nemo necessitatibus molestias eos dolorum impedit magni nam officiis fugiat architecto ullam, velit mollitia amet dolorem est at voluptatibus doloribus.
-          Veniam tempora est voluptate incidunt maiores qui. Nostrum provident recusandae, dicta facere omnis sint tempore possimus, sunt corrupti totam adipisci! Voluptates expedita quo sint modi? Unde eius sunt facere ullam?
-          Corporis, beatae architecto? Reiciendis vitae velit, beatae minus corporis nostrum iure saepe aperiam recusandae enim quam reprehenderit necessitatibus iste maxime vero ipsa quia id adipisci asperiores odit. Inventore, quam assumenda.
-          Illum sed assumenda a et tempore repellendus, animi quos aspernatur vero, eaque eos minus? Nulla natus molestiae dolores eum, quia perferendis explicabo facilis mollitia, iure ab voluptatem maxime, nihil ducimus.
-          Earum qui optio odit dolorum iure cumque consequatur minima nostrum repudiandae officia molestias expedita inventore ullam nemo explicabo vero facilis ex blanditiis esse maxime assumenda, tempore temporibus dolorem unde. Expedita.
-          Quod reiciendis officia temporibus labore repellat, eos autem fugit. Quos nesciunt dolore eaque non suscipit commodi ullam? Consequuntur mollitia ad earum, tempore veniam eveniet sapiente accusamus fugit, quae, provident harum.
-          Aliquid animi rem sed sit voluptas sequi reiciendis maiores iste nulla vitae sint ut, laboriosam consectetur provident temporibus exercitationem. Impedit voluptate illo rem sequi voluptas omnis quibusdam. Maiores, tenetur optio!
-          Autem deleniti eius aperiam maxime corporis beatae rem praesentium accusantium, ab magni optio possimus dolore numquam saepe libero, laborum quos sunt incidunt dignissimos, sapiente nulla. Delectus dolores expedita odit consequatur.
-          Fugiat magnam, expedita ea sint eligendi saepe nisi optio reprehenderit earum numquam, eum eius corrupti ullam et facere sequi rem suscipit natus in facilis officiis dolores? Necessitatibus fugit recusandae esse?</p>
+        <p className={`${s.title}  mb-5 text-center`}>Как оформить заказ?</p>
+        <div className={s.manual}>
+            <div className={s.orderList}>1</div>
+            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sed, nemo dolorem, qui incidunt dolores consequuntur similique tenetur quos ea, ut fugiat! Nemo numquam perspiciatis obcaecati dolore itaque eaque aliquid.</p>
+        </div>
+        <div className={s.manual}>
+            <div className={s.orderList}>2</div>
+            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit quos, dignissimos necessitatibus culpa assumenda inventore reiciendis placeat explicabo incidunt odit quia amet debitis? Laborum quae voluptatum dolores dolorem ipsum ea ipsam quis odit sapiente!</p>
+        </div>
+        <div className={s.manual}>
+            <div className={s.orderList}>3</div>
+            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
+        </div>
+        <div className={s.manual}>
+            <div className={s.orderList}>4</div>
+            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, omnis illo quis delectus accusamus dolores magni? Omnis, alias, laboriosam quo obcaecati esse suscipit, libero iusto perspiciatis dolores illo quibusdam!</p>
+        </div>
+        <div className={s.manual}>
+            <div className={s.orderList}>5</div>
+            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, omnis illo quis delectus accusamus dolores magni? Omnis, alias, laboriosam quo obcaecati esse suscipit, libero iusto perspiciatis dolores illo quibusdam!</p>
+        </div>
+        <div className={s.manual}>
+            <div className={s.orderList}>6</div>
+            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
+        </div>
       </div>
       <div className={s.contacts}>
         <hr className='my-10' />
