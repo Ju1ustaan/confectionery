@@ -9,7 +9,6 @@ const Header = () => {
             <a href="" className={s.link}>Заказать</a>
             <a href="" className={s.link}>О нас</a>
             <a href="" className={s.link}>Контакты</a>
-            <a href="" className={s.link}>Отзывы</a>
         </nav>
     </div>
   )

@@ -109,6 +109,7 @@
 @media (max-width: 800px) {
     .wrapper {
         grid-template-columns: 1fr;
+        padding-top: 70px;
     }
 
     .info {

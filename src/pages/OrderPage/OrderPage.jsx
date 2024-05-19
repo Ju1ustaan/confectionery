@@ -25,7 +25,7 @@ const OrderPage = ({ steps }) => {
         {/* <div className={s.btn}>
           <NavigateBtn navigateBtnOption={navigateBtnOption} />
         </div> */}
-        <div className='flex justify-between '>
+        <div className={`${s.steps} flex justify-between w-full`}>
           {
             todo?.data.map((i, idx) => (
               <div key={idx} className={`${s.step} ${i.id < id ? s.active : null}`}>
