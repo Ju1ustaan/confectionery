@@ -15,18 +15,37 @@
     margin-left: 10px;
     font-weight: 500;
 }
+
 .text {
+    position: relative;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700;
     background: linear-gradient(to left, 
-    #F9CDB2, #fff);
+    violet, rgb(255, 0, 255));
     background-clip: text;
     display: inline;
     color: transparent;
     animation: animated 5s linear infinite;
 }
 
+.text::after {
+    position: absolute;
+    content: 'Bakery & cakes';
+    width: 200%;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-29%);
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to left, 
+    violet, rgb(255, 0, 255));
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
+}
 @keyframes animated {
     to{background-position-x: 150px;}
 }

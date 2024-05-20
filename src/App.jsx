@@ -2,9 +2,7 @@ import MainPage from "./pages/MainPage/MainPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import Steps from "./components/Steps/Steps";
-import Card from "./components/Card/Card";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const steps = [

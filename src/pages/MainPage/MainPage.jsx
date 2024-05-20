@@ -2,6 +2,22 @@ import React from 'react'
 import NavigateBtn from '../../components/NavigateBtn/NavigateBtn'
 import s from './style.module.css'
 import testImg from '../../assets/images/blue-background.jpg'
+import testImg1 from '../../assets/images/cake-images.jpg'
+import testImg2 from '../../assets/images/Candles_Cakes_481696.jpg'
+import testImg3 from '../../assets/images/How to Frost a Cake with Buttercream - Step-by-Step Tutorial (Photos).jpg'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import './main.css'
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-cube';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Autoplay, EffectCube } from 'swiper/modules';
 
 const MainPage = () => {
   const navigateBtnOption = {
@@ -22,8 +38,39 @@ const MainPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam quidem similique deleniti corporis et iusto, sed non libero fuga ex nostrum doloremque asperiores omnis nesciunt, maxime, nobis labore quos?
           </p>
         </div>
+
         <div className={s.img}>
-          <img src={testImg} alt="" />
+          <Swiper
+            effect={'cube'}
+            grabCursor={true}
+            cubeEffect={{
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            }}
+            autoplay={{
+              delay: 3000,
+              reverseDirection: true,
+              disableOnInteraction: false,
+            }}
+            pagination={true}
+            modules={[EffectCube, Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={testImg} alt='cube images' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={testImg1} alt='cube images' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={testImg2} alt='cube images' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={testImg3} alt='cube images' />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
       <div className={s.order}>
@@ -34,28 +81,28 @@ const MainPage = () => {
         </div>
         <p className={`${s.title}  mb-5 text-center`}>Как оформить заказ?</p>
         <div className={s.manual}>
-            <div className={s.orderList}>1</div>
-            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sed, nemo dolorem, qui incidunt dolores consequuntur similique tenetur quos ea, ut fugiat! Nemo numquam perspiciatis obcaecati dolore itaque eaque aliquid.</p>
+          <div className={s.orderList}>1</div>
+          <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sed, nemo dolorem, qui incidunt dolores consequuntur similique tenetur quos ea, ut fugiat! Nemo numquam perspiciatis obcaecati dolore itaque eaque aliquid.</p>
         </div>
         <div className={s.manual}>
-            <div className={s.orderList}>2</div>
-            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit quos, dignissimos necessitatibus culpa assumenda inventore reiciendis placeat explicabo incidunt odit quia amet debitis? Laborum quae voluptatum dolores dolorem ipsum ea ipsam quis odit sapiente!</p>
+          <div className={s.orderList}>2</div>
+          <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit quos, dignissimos necessitatibus culpa assumenda inventore reiciendis placeat explicabo incidunt odit quia amet debitis? Laborum quae voluptatum dolores dolorem ipsum ea ipsam quis odit sapiente!</p>
         </div>
         <div className={s.manual}>
-            <div className={s.orderList}>3</div>
-            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
+          <div className={s.orderList}>3</div>
+          <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
         </div>
         <div className={s.manual}>
-            <div className={s.orderList}>4</div>
-            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, omnis illo quis delectus accusamus dolores magni? Omnis, alias, laboriosam quo obcaecati esse suscipit, libero iusto perspiciatis dolores illo quibusdam!</p>
+          <div className={s.orderList}>4</div>
+          <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, omnis illo quis delectus accusamus dolores magni? Omnis, alias, laboriosam quo obcaecati esse suscipit, libero iusto perspiciatis dolores illo quibusdam!</p>
         </div>
         <div className={s.manual}>
-            <div className={s.orderList}>5</div>
-            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, omnis illo quis delectus accusamus dolores magni? Omnis, alias, laboriosam quo obcaecati esse suscipit, libero iusto perspiciatis dolores illo quibusdam!</p>
+          <div className={s.orderList}>5</div>
+          <p className={s.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at, omnis illo quis delectus accusamus dolores magni? Omnis, alias, laboriosam quo obcaecati esse suscipit, libero iusto perspiciatis dolores illo quibusdam!</p>
         </div>
         <div className={s.manual}>
-            <div className={s.orderList}>6</div>
-            <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
+          <div className={s.orderList}>6</div>
+          <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
         </div>
       </div>
       <div className={s.contacts}>
@@ -64,9 +111,9 @@ const MainPage = () => {
           <h3 className={s.title}>
             Как нас найти?
           </h3>
-          
+
           <div className={s.map}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.053460240025!2d76.86806387580869!3d43.22933877974231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692376018077%3A0x33b6e04a72740f40!2z0KLQvtGA0YLRiyDQkNC70LzQsNGC0Ys!5e0!3m2!1sru!2skz!4v1716068212389!5m2!1sru!2skz" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title='map adress' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.053460240025!2d76.86806387580869!3d43.22933877974231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692376018077%3A0x33b6e04a72740f40!2z0KLQvtGA0YLRiyDQkNC70LzQsNGC0Ys!5e0!3m2!1sru!2skz!4v1716068212389!5m2!1sru!2skz" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className={s.icons}>
             <div className={s.social}>
@@ -79,13 +126,13 @@ const MainPage = () => {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" /></svg>
             </div>
             <div className={s.social}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M31.5 63.5C0 95 0 145.7 0 247V265C0 366.3 0 417 31.5 448.5C63 480 113.7 480 215 480H233C334.3 480 385 480 416.5 448.5C448 417 448 366.3 448 265V247C448 145.7 448 95 416.5 63.5C385 32 334.3 32 233 32H215C113.7 32 63 32 31.5 63.5zM75.6 168.3H126.7C128.4 253.8 166.1 290 196 297.4V168.3H244.2V242C273.7 238.8 304.6 205.2 315.1 168.3H363.3C359.3 187.4 351.5 205.6 340.2 221.6C328.9 237.6 314.5 251.1 297.7 261.2C316.4 270.5 332.9 283.6 346.1 299.8C359.4 315.9 369 334.6 374.5 354.7H321.4C316.6 337.3 306.6 321.6 292.9 309.8C279.1 297.9 262.2 290.4 244.2 288.1V354.7H238.4C136.3 354.7 78 284.7 75.6 168.3z" /></svg>
             </div>
             <div className={s.social}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" /></svg>
             </div>
             <div className={s.social}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z" /></svg>
             </div>
           </div>
 

@@ -4,59 +4,8 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 2fr 5fr ;
     padding: 20px;
-}
-
-.btn {
-    width: 130px;
-    height: 50px;
-}
-
-.btn svg {
-    width: 20px;
-    fill: white;
-}
-
-.steps {
-    position: relative;
-}
-
-.steps::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    height: 5px;
-    background-color: #fff;
-}
-
-.step {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.text {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-.active {
-    background-color: #F9CDB2;
-    color: transparent;
-    box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 80px #F9CDB2;
 }
 
 @media (max-width: 800px) {

@@ -5,7 +5,9 @@
 body {
   background: #9acbff;
   background: url('./assets/images/fon-dlya-konditera.jpg');
-  background-position: top;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: #58453A;
@@ -24,4 +26,8 @@ body {
   backdrop-filter: blur(10px);
   margin: 0 auto;
 }
+
+
+
+/* slider */
 
