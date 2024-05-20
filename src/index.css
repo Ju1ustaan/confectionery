@@ -28,6 +28,12 @@ body {
 }
 
 
+@media (max-width: 800px) {
+  body {
+    background: #fff;
+  }
+}
+
 
 /* slider */
 

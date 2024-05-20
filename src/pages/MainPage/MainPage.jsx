@@ -51,7 +51,6 @@ const MainPage = () => {
             }}
             autoplay={{
               delay: 3000,
-              reverseDirection: true,
               disableOnInteraction: false,
             }}
             pagination={true}

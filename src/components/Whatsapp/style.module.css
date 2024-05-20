@@ -1,0 +1,42 @@
+.whatsapp {
+    position: fixed;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+.whatsapp svg{
+    position: relative;
+    width: 50px;
+    fill: #25D366;
+    z-index: 99;
+}
+
+
+.pulseCircle {
+	border-radius: 50%;
+	background-color: #ffffffa8;
+	width: 78px;
+	height: 78px;
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+	opacity: 0;
+    z-index: -1;
+	animation: scaleIn 3s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+}
+
+@keyframes scaleIn {
+	from {
+		transform: scale(0.5, 0.5);
+		opacity: 0.5;
+	}
+	to {
+		transform: scale(2.5, 2.5);
+		opacity: 0;
+	}
+}

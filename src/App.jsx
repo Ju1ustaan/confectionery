@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OrderPage from "./pages/OrderPage/OrderPage";
 import Steps from "./components/Steps/Steps";
 import Header from "./components/Header/Header";
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 
 const App = () => {
   const steps = [
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/order-page/:id" element={<Steps/>}/>
           </Route>
         </Routes>
+        <Whatsapp/>
         {/* <Footer/> */}
       </Router>
     </div>
