@@ -1,21 +1,22 @@
 .wrapper {
   gap: 10px;
 }
-.title {
-    padding: 10px 20px;
-    text-align: center;
-    width: 100%;
-    cursor: pointer;
-    color: #fff;
-    border: none;
-    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 30px #F9CDB2;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-  }
-  
-  .title:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 10px #F9CDB2, 
-      0 0 30px #F9CDB2, 
-      0 0 50px #F9CDB2;
-  }
 
+.title {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 30px #F9CDB2;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 10px #F9CDB2,
+    0 0 30px #F9CDB2,
+    0 0 50px #F9CDB2;
+}

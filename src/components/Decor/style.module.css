@@ -5,3 +5,57 @@
     left: 0;
     z-index: 9999;
 }
+
+.accordion {
+    position: absolute;
+    width: 100%;
+    padding: 0 10px;
+    height: 10%;
+    background-color: #f9cdb283;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.accordion p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.accordion svg {
+    width: 30px;
+    fill: inherit;
+    margin: 0 auto;
+}
+
+.active {
+    height: 30%;
+}
+
+.active svg {
+    transform: rotate(180deg);
+}
+
+.btn {
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #F9CDB2;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 30px #F9CDB2;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px #F9CDB2,
+        0 0 30px #F9CDB2,
+        0 0 50px #F9CDB2;
+}
