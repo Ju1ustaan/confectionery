@@ -6,18 +6,26 @@ import testImg1 from '../../assets/images/cake-images.jpg'
 import testImg2 from '../../assets/images/Candles_Cakes_481696.jpg'
 import testImg3 from '../../assets/images/How to Frost a Cake with Buttercream - Step-by-Step Tutorial (Photos).jpg'
 
+import review1 from '../../assets/review/Review1.jpg'
+import review2 from '../../assets/review/Review2.png'
+import review3 from '../../assets/review/Review3.jpg'
+import review4 from '../../assets/review/Review4.jpg'
+import review5 from '../../assets/review/Review5.jpg'
+import insta from '../../assets/review/linkinsta.jpg'
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import './main.css'
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 
 
 // import required modules
-import { Autoplay, EffectCube } from 'swiper/modules';
+import { Autoplay, EffectCube, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 const MainPage = () => {
   const navigateBtnOption = {
@@ -104,10 +112,51 @@ const MainPage = () => {
           <p className={s.desc}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate et explicabo ea ratione cupiditate ullam quod assumenda laudantium quae consequuntur facilis aperiam molestias, tempora consequatur neque eveniet quidem. Nesciunt sequi delectus voluptas accusantium veritatis omnis possimus pariatur vel exercitationem reiciendis?</p>
         </div>
       </div>
+
+      <div className={s.review}>
+      <hr className='my-10' />
+
+      <p className={`${s.title}  mb-5 px-10`}>Отзывы</p>
+        <div className='flex justify-around'>
+        <Swiper
+          spaceBetween={30}
+          effect={'fade'}
+          navigation={true}
+          pauseOnMouseEnter={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          modules={[EffectFade, Navigation, Pagination, Autoplay]}
+          className={s.mySwiper}
+        >
+          <SwiperSlide>
+            <img src={review1} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={review2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={review3} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={review4} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={review5} />
+          </SwiperSlide>
+        </Swiper>
+        <div className={s.insta}>
+          <img src={insta} alt="qr code instagram" />
+        </div>
+        </div>
+
+      </div>
+
       <div className={s.contacts}>
         <hr className='my-10' />
         <div >
-          <h3 className={s.title}>
+          <h3 className={`${s.title}  mb-5 px-10`}>
             Как нас найти?
           </h3>
 

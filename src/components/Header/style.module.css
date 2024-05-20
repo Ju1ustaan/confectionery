@@ -11,9 +11,18 @@
     align-items: center;
 }
 
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
 .link {
-    margin-left: 10px;
     font-weight: 500;
+}
+
+.link svg {
+    width: 30px;
+    fill: #58453A;
 }
 
 .text {
