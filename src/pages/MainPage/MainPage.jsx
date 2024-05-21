@@ -29,7 +29,7 @@ import { Autoplay, EffectCube, EffectFade, Navigation, Pagination } from 'swiper
 
 const MainPage = () => {
   const navigateBtnOption = {
-    path: '/order-page/1',
+    path: '/order-page/Fillings',
     text: 'Торт на заказ',
     fontSize: 'text-xl',
     fontWegth: 'font-bold',
@@ -117,7 +117,7 @@ const MainPage = () => {
       <hr className='my-10' />
 
       <p className={`${s.title}  mb-5 px-10`}>Отзывы</p>
-        <div className='flex justify-around'>
+        <div className={`${s.reviewWrap} flex justify-around`}>
         <Swiper
           spaceBetween={30}
           effect={'fade'}
